@@ -1,8 +1,0 @@
-SELECT citas.id, CONCAT(citas.fecha, '****', citas.hora) AS cita FROM citas
-LEFT OUTER JOIN usuarios 
-ON citas.usuarioId=usuarios.id 
-LEFT OUTER JOIN citasservicios 
-ON citasservicios.citaId=citas.id
-LEFT OUTER JOIN servicios
-ON servicios.id=citasservicios.servicioId
-WHERE fecha = "2023-12-28"
