@@ -13,7 +13,7 @@ class ServicioController {
             session_start();
         }
 
-        isAdmin();
+         isAdmin();
         $servicios = Servicio::all();
 
         $router->render('servicios/index', [

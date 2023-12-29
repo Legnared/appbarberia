@@ -118,7 +118,7 @@ function paginaSiguiente() {
 async function consultarAPI() {
 
     try {
-        const url =  `${location.origin}/api/servicios;`
+        const url =  `${location.origin}/api/servicios`;
         const resultado = await fetch(url);
         const servicios = await resultado.json();
         mostrarServicios(servicios);
@@ -153,7 +153,7 @@ function mostrarServicios(servicios) {
 
         document.querySelector('#servicios').appendChild(servicioDIV);
 
-        // console.log(servicioDIV);
+        console.log(servicioDIV);
     });
 }
 
